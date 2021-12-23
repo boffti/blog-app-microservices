@@ -10,7 +10,7 @@
     "event_bus": "npm start --prefix event-bus",
     "query": "npm start --prefix query",
     "moderation": "npm start --prefix moderation",
-    "services": "concurrently -n 'post,comment,eventbus,query,mod' -c 'cyan' \"npm run posts\" \"npm run comments\" \"npm run event_bus\" \"npm run query\" \"npm run moderation\""
+    "services": "concurrently -n 'post:4000,comment:4001,eventbus:4005,query:4002,mod:4003' -c 'cyan' \"npm run posts\" \"npm run comments\" \"npm run event_bus\" \"npm run query\" \"npm run moderation\""
   },
   "keywords": [],
   "author": "",
